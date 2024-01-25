@@ -8,6 +8,9 @@ function calculate(event){
    const numberB = +numbers[1];
 
    const operation = inputValue.match(expression);
+   if(isNaN(numberA) || isNaN(numberB) || operation === null){
+    return updateResult('Operation not recognized')        
+   }
    const operator = operation[0]; // To retrieve the + - * / 
    
    const calculator = new Calculator();

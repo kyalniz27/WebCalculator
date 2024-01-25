@@ -16,7 +16,7 @@ Calculator.prototype.multiply = function(number){
 
 Calculator.prototype.divide = function(number){
     if(number === 0){
-        throw new Error("Number can not be divided by zero.")
+        throw new ArithhmeticError("Number can not be divided by zero")
     }
     return this.total /= number;
 }
